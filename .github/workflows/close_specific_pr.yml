@@ -1,13 +1,7 @@
 name: Close Specific PR
 
 on:
-  pull_request_target:
-    types: [opened, ]
-    # Note: If you use both the branches filter and the paths filter, the workflow will only run when both filters are satisfied.
-    branches:
-      - master
-    paths:
-      - 'usage/workflow_download.py'
+  workflow_dispatch:
 jobs:
   close_specific_pr:
     env:
