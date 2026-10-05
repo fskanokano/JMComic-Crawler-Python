@@ -1,17 +1,7 @@
 name: Run Test (HTML)
 
 on:
-  schedule:
-    - cron: "0 0 * * *"
   workflow_dispatch:
-  push:
-    branches: [ "dev" ]
-    paths:
-      - 'src/**/*.py'
-      - 'tests/**/*.py'
-      - '.github/workflows/test_html.yml'
-      - 'assets/option/option_test_html.yml'
-
 jobs:
   test: # This code is based on https://github.com/gaogaotiantian/viztracer/blob/master/.github/workflows/python-package.yml
     strategy:
