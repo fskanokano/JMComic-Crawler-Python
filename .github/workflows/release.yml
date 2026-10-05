@@ -3,9 +3,6 @@ name: Publish If Release
 
 on:
   workflow_dispatch:
-  release:
-    types: [ published ]
-
 jobs:
   release:
     name: Publish `jmcomic` to PYPI
